@@ -1,0 +1,84 @@
+ <x-postbody :username="$details['name']" :createdat="$details['created_at']"
+                        :category="$details['category']" :subject="$details['subject']"
+                        :postcontent="$details['postcontent']" :totallikes="$details['likes']"
+                        :totalcomments="$details['comments']" />
+
+
+                                           
+{{--                    
+                       <x-postbody :username="$details->name" :createdat="$details->created_at"
+                           :category="$details->category" :subject="$details->subject"
+                           :postcontent="$details->postcontent" :totallikes="$details->likes"
+                           :totalcomments="$details->totalcomments" :commentsdata="$details[0][comments]" 
+                           :postid="$details->postid" /> --}}
+
+
+                            {{-- <x-postbody :username="$details['name']" :createdat="$details['created_at']"
+                           :category="$details['category']" :subject="$details['subject']"
+                           :postcontent="$details['postcontent']" :totallikes="$details['likes']"
+                           :totalcomments="$details['totalcomments']" :postid="$details['postid']" 
+                           :commentsdata="$details[0]" /> --}}
+
+                              <div class="postedby ml-5">
+                    <p class="commentsection"></p><span style="background-color: orange;"><i class="fas fa-horizontal-rule"></i></span>
+                </div>
+                
+                <div class="comment ml-5">
+                   <p class="commentercomment"></p>
+                </div>
+
+
+                 $isliked = false;
+            $countlikes = null;
+            $countcomments = null;
+
+           $countlikes = DB::table('likes')->where('post_id',$data->postid)->where('user_id',session('id'));
+            $countcomments = DB::table('comments')->where('postid',$data->postid)->count();
+            if($countlikes > 0 && $countcomments>0){
+            
+                $isliked= true;
+
+                return [
+                    
+                    $data->isliked = $isliked,
+                    $data->likes = $countlikes,
+                    $data->comments = $countcomments
+                ];
+            }else{
+                    return [
+                    
+                        $data->isliked = $isliked,
+                        $data->likes = $countlikes,
+                        $data->comments = $countcomments
+                    ];
+
+
+         {{-- <input class="btn btn-transparent btn-dark w-25 brzero" type="file" name="file" value="file" data-toggle="collapse"
+                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i
+                    class="far fa-images"></i>
+                Attach Image /> --}}
+
+                {{-- <div class="input-group w-25 ">
+                    <div class="custom-file">
+                        <label class="custom-file-label brzero" for="inputGroupFile04">Image</label>
+                      <input type="file" class="custom-file-input bg-success" id="inputGroupFile04">
+                    </div>
+                    
+                  </div> --}}
+
+                  <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-home"></i> Home page</a>
+        </li>
+
+        //comments controller
+               // $analizetext = new analysisbaseclass();
+        // $cleancomment = $analizetext->analysisbase($request->comment);        
+        // $scoretoStore = $analizetext->makescore($cleancomment);
+        // // $wordsandscores = array('words'=>$cleancomment,'scores'=>$scoretoStore);
+        //     $postivescore = $scoretoStore['positivescore'];
+        //     $negativescore = $scoretoStore['negativescore'];
+        //     $compoundscore = $scoretoStore['compound'];
+        // $analysisSave = "$postivescore" . "," . "$negativescore" . "," . "$compoundscore";
+        //comments controller
+        
+        

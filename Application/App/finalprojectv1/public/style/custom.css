@@ -1,0 +1,306 @@
+/* *{
+    border: 1px solid red;
+} */
+
+/* for mainpage layout css */
+
+html, body {
+    height: 100%;
+    background-color: gainsboro;
+}
+
+/* for mainpage layout css */
+
+/* for header */
+
+.brzero {
+    border-radius: 0;
+}
+
+.wifdrop {
+    width: 100px;
+}
+
+.lgpimage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.lgpname {
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.applogo {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.applogo:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+/* for header */
+
+/* for side bar  */
+
+.sidebar>ul>li>a {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.sidebar>ul>li>a:hover {
+    background: orange;
+    color: black;
+}
+
+/* for side bar  */
+
+/* for posting panel  */
+
+.imageby {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.postimagestyle {
+    max-width: fit-content;
+    background-image: url("../images/postimage.jpgs");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.postarea {
+    width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: none;
+}
+
+.subjectarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px 2px;
+    border-radius: none;
+}
+
+.subjectarea, .postarea {
+    background-color: rgba(216, 216, 216, 0.993);
+    padding-left: 5px;
+}
+
+.brzero {
+    border-radius: 0;
+}
+
+.header-css {
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+.imgprew {
+    min-height: 250px;
+    max-width: 250px;
+}
+
+/* for posting panel  */
+
+/* for post  */
+
+.imagebypost {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.imagebycomment {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.likeshareinfo {
+    font-size: small;
+    border-bottom: 1px solid gray;
+}
+
+.brzero {
+    border-radius: 0;
+}
+
+.postimagestyle {
+    max-width: fit-content;
+    background-image: url("images/postimage.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.postedby {
+    font-weight: bold;
+    font-size: .8rem;
+    /* border-right: 1px solid black; */
+    padding-right: 5px;
+}
+
+.bbb {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    border-left: 1px solid rgb(219, 219, 219);
+    border-right: 1px solid rgb(219, 219, 219);
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.commenttype {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(207, 205, 205);
+    padding: 8px;
+}
+
+.comment {
+    font-size: .8rem;
+}
+
+/* for post  */
+
+/* for dashboard  */
+
+.upperpart {
+    height: 250px;
+}
+
+.upperpart>div {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+
+.imgstyle {
+    height: 150px;
+    width: 150px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+/* for dashboard  */
+
+/* for login  */
+
+.loginbody {
+    background-image: url(./images/loginPageBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.border-zero {
+    border-radius: 0;
+}
+
+/* for login  */
+
+/* for profile page  */
+
+.profileimage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileimage:hover {
+    /* opacity: 0.7; */
+    background-color: white;
+}
+
+.add_image{
+    z-index: 1;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.fontstyle {
+    font-size: medium;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+.activitysection {
+    height: 250px;
+    width: auto;
+    text-align: bottom;
+    /* align-items: flex-end; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:200;
+    letter-spacing: .3em;
+}
+
+/* for profile page  */
+
+/* for scroll bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+/* for comment send btn */
+
+.commentsendbtn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.commentsendbtn:hover {
+    background-color: rgba(151, 151, 233, 0.582);
+}
+
+.commentsendbtn::selection {
+    border: none;
+    outline-offset: 0;
+    outline: none;
+    background-color: rgba(106, 106, 235, 0.582);
+}
+
+/* for comment send btn end*/
+
+.firstlettercap:first-letter{
+    text-transform: capitalize;
+}
+#dashboardanalysisvalues:nth-child(odd){
+    background-color: whitesmoke;
+}
+#dashboardanalysisvalues:nth-child(even){
+    background-color: rgb(231, 248, 232);
+}
